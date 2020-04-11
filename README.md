@@ -1,7 +1,8 @@
 # LeetCode
 
 This Repositoary is created inorder to collect solved Leetcode problems everyday. The types of problems include
-Easy, Medium and Hard stages.
+Easy, Medium and Hard stages.This collection will help to solve the leetcode problems with an ease.
+
 
 #Problem 1
 
