@@ -18,7 +18,7 @@ string convert(string s, int numRows);
 */
 
 class Solution {
-    public String convert(String s, int numRows) {
+    public String sconvert(String s, int numRows) {
         Map<Integer, StringBuilder> map = new HashMap<>();
         int pos = 0;
         boolean incr = true;
@@ -44,4 +44,13 @@ class Solution {
         return res.toString();
 
     }
+}
+
+class test {
+
+    public static void main(String[] args) {
+
+        System.out.println("abcds");
+    }
+
 }
