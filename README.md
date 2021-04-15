@@ -40,3 +40,18 @@ Given an integer x, return true if x is palindrome integer.
 
 An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.
 
+
+
+Problem 20
+Valid Parentheses
+
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+ 
+
+*/
+
