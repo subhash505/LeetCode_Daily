@@ -66,6 +66,65 @@ C can be placed before D (500) and M (1000) to make 400 and 900.
 Given an integer, convert it to a roman numeral.
 
 
+/*
+   
+   
+  
+   #Problem 15
+
+   Problem : - 3Sum
+   
+   Given an integer array nums, return all the triplets [nums[i], nums[j],
+   nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] +
+   nums[k] == 0.
+ 
+   Notice that the solution set must not contain duplicate triplets.
+   
+ */
+
+ class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+
+        ArrayList<List<Integer>> result = new ArrayList<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int j = i + 1;
+            int k = nums.length - 1;
+
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+
+            while (j < k) {
+                if (k < nums.length - 1 && nums[k] == nums[k + 1]) {
+                    k--;
+                    continue;
+                }
+
+                if (nums[i] + nums[j] + nums[k] > 0) {
+                    k--;
+                } else if (nums[i] + nums[j] + nums[k] < 0) {
+                    j++;
+                } else {
+                    ArrayList<Integer> l = new ArrayList<>();
+                    l.add(nums[i]);
+                    l.add(nums[j]);
+                    l.add(nums[k]);
+                    result.add(l);
+                    j++;
+                    k--;
+                }
+            }
+        }
+
+        return result;
+    }
+}
+
+ 
+
+
 
 Problem 20
 Valid Parentheses
