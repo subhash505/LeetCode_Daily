@@ -505,3 +505,14 @@ A Sudoku board (partially filled) could be valid but is not necessarily solvable
 Only the filled cells need to be validated according to the mentioned rules.
 
 */
+
+
+#Problem 44 
+
+Wild Card Matching 
+
+Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*' where:
+
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+The matching should cover the entire input string (not partial).
