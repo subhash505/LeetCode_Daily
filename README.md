@@ -506,6 +506,9 @@ Only the filled cells need to be validated according to the mentioned rules.
 
 */
 
+#Problem 43 
+Multiply Strings
+
 
 #Problem 44 
 
