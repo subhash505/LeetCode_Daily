@@ -202,7 +202,16 @@ You may return the answer in any order.
 Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
 
+# Problem 17
 
+Letter Combination of Phone Number 
+
+Given a string containing digits from 2-9 inclusive, 
+return all possible letter combinations that the number could represent. 
+Return the answer in any order.
+
+A mapping of digit to letters (just like on the telephone buttons) is given below. 
+Note that 1 does not map to any letters.
  
 #Problem 19
 
