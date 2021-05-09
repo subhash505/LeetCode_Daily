@@ -515,6 +515,12 @@ Only the filled cells need to be validated according to the mentioned rules.
 
 */
 
+#Problem 41
+
+First Missing Positive.
+
+Given an unsorted integer array nums, find the smallest missing positive integer.
+
 #Problem 43 
 Multiply Strings
 
