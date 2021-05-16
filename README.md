@@ -616,3 +616,19 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 
 
 Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+
+#Problem 60
+#Permutation Sequence
+
+The set [1, 2, 3, ..., n] contains a total of n! unique permutations.
+
+By listing and labeling all of the permutations in order, we get the following sequence for n = 3:
+
+"123"
+"132"
+"213"
+"231"
+"312"
+"321"
+Given n and k, return the kth permutation sequence.
