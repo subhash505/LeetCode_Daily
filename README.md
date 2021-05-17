@@ -632,3 +632,14 @@ By listing and labeling all of the permutations in order, we get the following s
 "312"
 "321"
 Given n and k, return the kth permutation sequence.
+
+
+#Problem 70
+
+Climbing Stairs
+
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+ 
