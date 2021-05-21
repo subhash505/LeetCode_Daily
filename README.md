@@ -660,26 +660,7 @@ Output: 23
 
 
 
-
-
-
-
-
-
-
-
-#Problem 70
-
-Climbing Stairs
-
-You are climbing a staircase. It takes n steps to reach the top.
-
-Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-
- 
-
-
- #Problem 66
+#Problem 66
 
  Plus one
 
@@ -712,6 +693,32 @@ Constraints:
 
 1 <= digits.length <= 100
 0 <= digits[i] <= 9
+
+
+#Problem 67  Add Binary
+
+Given two binary strings a and b, return their sum as a binary string.
+
+
+
+
+
+
+
+
+
+#Problem 70
+
+Climbing Stairs
+
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+ 
+
+
+ 
 
 
 
