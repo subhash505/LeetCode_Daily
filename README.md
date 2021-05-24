@@ -734,6 +734,12 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 The number of elements initialized in nums1 and nums2 are m and n respectively. You may assume that nums1 has a size equal to m + n such that it has enough space to hold additional elements from nums2.
 
 
+#Problem 99
+Recover Binary Search Tree
+You are given the root of a binary search tree (BST), where exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
+
+Follow up: A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
+
 
 #Problem 100
 
