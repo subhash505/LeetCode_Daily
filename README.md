@@ -734,11 +734,15 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 The number of elements initialized in nums1 and nums2 are m and n respectively. You may assume that nums1 has a size equal to m + n such that it has enough space to hold additional elements from nums2.
 
 
-#Problem 99
-Recover Binary Search Tree
-You are given the root of a binary search tree (BST), where exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
+#Problem 93 
 
-Follow up: A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
+Restore IP Addresses
+
+Given a string s containing only digits, return all possible valid IP addresses that can be obtained from s. You can return them in any order.
+
+A valid IP address consists of exactly four integers, each integer is between 0 and 255, separated by single dots and cannot have leading zeros. For example, "0.1.2.201" and "192.168.1.1" are valid IP addresses and "0.011.255.245", "192.168.1.312" and "192.168@1.1" are invalid IP addresses. 
+
+
 
 
 #Problem 97
@@ -768,6 +772,13 @@ A valid BST is defined as follows:
 The left subtree of a node contains only nodes with keys less than the node's key.
 The right subtree of a node contains only nodes with keys greater than the node's key.
 Both the left and right subtrees must also be binary search trees.
+
+
+#Problem 99
+Recover Binary Search Tree
+You are given the root of a binary search tree (BST), where exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
+
+Follow up: A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
 
 
 #Problem 100
