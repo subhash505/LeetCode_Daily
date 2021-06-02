@@ -1,9 +1,6 @@
 /*
-
-
 #Problem 16
-
-3Sum Closest
+3 Sum Closest
 
 */
 public int threeSumClosest(int[] nums, int target) {
