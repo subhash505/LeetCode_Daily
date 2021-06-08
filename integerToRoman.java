@@ -22,8 +22,6 @@ Given an integer, convert it to a roman numeral.
 
 */
 
-
-
 class Solution {
     public String intToRoman(int num) {
         int[] arabics = new int[] { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
