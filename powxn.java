@@ -1,4 +1,6 @@
 #Problem 50
+ 
+ 
  pow(x,n)
 
 class Solution {
