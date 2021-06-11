@@ -1,35 +1,31 @@
-/*
- * #Problem 40
- * 
- * Combination Sum II
- */
+/* 
+#Problem 39
+Combination Sum
+*/
 
- class Solution {
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
-        List<Integer> curr = new ArrayList<Integer>();
-        Arrays.sort(candidates);
-        helper(result, curr, 0, target, candidates);
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
+        helper(candidates, 0, target, 0, temp, result);
         return result;
     }
 
-    public void helper(List<List<Integer>> result, List<Integer> curr, int start, int target, int[] candidates) {
-        if (target == 0) {
-            result.add(new ArrayList<Integer>(curr));
-            return;
-        }
-        if (target < 0) {
+    private void helper(int[] candidates, int start, int target, int sum, List<Integer> list,
+            List<List<Integer>> result) {
+        if (sum > target) {
             return;
         }
 
-        int prev = -1;
+        if (sum == target) {
+            result.add(new ArrayList<>(list));
+            return;
+        }
+
         for (int i = start; i < candidates.length; i++) {
-            if (prev != candidates[i]) { // each time start from different element
-                curr.add(candidates[i]);
-                helper(result, curr, i + 1, target - candidates[i], candidates); // and use next element only
-                curr.remove(curr.size() - 1);
-                prev = candidates[i];
-            }
+            list.add(candidates[i]);
+            helper(candidates, i, target, sum + candidates[i], list, result);
+            list.remove(list.size() - 1);
         }
     }
 }
