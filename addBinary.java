@@ -1,9 +1,5 @@
-
 /*
-
-#Problem 67 ADD Binary
-
-*/
+#Problem 67 ADD Binary   */
 
 
 class Solution {
