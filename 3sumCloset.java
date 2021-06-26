@@ -1,7 +1,5 @@
-/*
-#Problem 16
+/* #Problem 16
 3 Sum Closest
-
 */
 public int threeSumClosest(int[] nums, int target) {
     int min = Integer.MAX_VALUE;
