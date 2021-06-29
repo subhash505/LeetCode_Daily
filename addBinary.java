@@ -1,7 +1,5 @@
 /*
 #Problem 67 ADD Binary   */
-
-
 class Solution {
 
     public String addBinary(String a, String b) {
