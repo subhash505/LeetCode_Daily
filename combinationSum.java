@@ -10,7 +10,6 @@ class Solution {
         helper(candidates, 0, target, 0, temp, result);
         return result;
     }
-
     private void helper(int[] candidates, int start, int target, int sum, List<Integer> list,
             List<List<Integer>> result) {
         if (sum > target) {
