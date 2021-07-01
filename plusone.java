@@ -1,10 +1,6 @@
-/*
+/* #Problem 66
 
-#Problem 66
-
-Plus One
-
-*/
+Plus One */
 
 class Solution {
     public int[] plusOne(int[] digits) {
