@@ -21,12 +21,7 @@ int len = removeElement(nums, val);
 // using the length returned by your function, it prints the first len elements.
 for (int i = 0; i < len; i++) {
     print(nums[i]);
-}
-
-*/
-
-
-
+} */
 
 class Solution {
     public int removeElement(int[] A, int elem) {
