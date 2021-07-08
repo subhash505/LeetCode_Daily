@@ -1,9 +1,7 @@
 /* 
 #Problem 88 
 
-Merged Two Sorted Array
-
-*/
+Merged Two Sorted Array  */
 
 class Solution {
 
