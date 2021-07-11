@@ -1,5 +1,4 @@
-/*
-Problem 26
+/* Problem 26 */
 
 Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.
 
@@ -23,8 +22,6 @@ for (int i = 0; i < len; i++) {
 }
 
 */
-
-
 
 class Solution {
     public int removeDuplicates(int[] nums) {
