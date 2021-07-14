@@ -10,9 +10,6 @@ Open brackets must be closed in the correct order.
  
 
 */
-
-
-
 class Solution {
 
   // Hash table that takes care of the mappings.
