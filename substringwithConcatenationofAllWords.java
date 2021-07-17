@@ -55,7 +55,6 @@ class Solution {
                         count--;
                         start = start + len;
                     }
-
                     if (count == words.length) {
                         result.add(start); // add to result
 
@@ -72,7 +71,6 @@ class Solution {
                 }
             }
         }
-
         return result;
     }
 
