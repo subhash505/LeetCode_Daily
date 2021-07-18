@@ -30,10 +30,8 @@ class Solution {
 
     for (int i = 0; i < s.length(); i++) {
       char c = s.charAt(i);
-
       // If the current character is a closing bracket.
       if (this.mappings.containsKey(c)) {
-
         // Get the top element of the stack. If the stack is empty, set a dummy value of '#'
         char topElement = stack.empty() ? '#' : stack.pop();
 
