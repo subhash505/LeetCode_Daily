@@ -5,7 +5,6 @@ class Solution {
    public int search(int[] nums, int target) {
     return binarySearch(nums, 0, nums.length-1, target);
 }
- 
 public int binarySearch(int[] nums, int left, int right, int target){
     if(left>right) 
         return -1;
