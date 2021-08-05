@@ -1,8 +1,6 @@
 /*
-#Problem 44
-*/
+#Problem 44  */
 class Solution {
-    
     public boolean isMatch(String s, String p) {
 	int i = 0;
 	int j = 0;
