@@ -10,7 +10,6 @@ class Solution {
 
         int pa = a.length() - 1;
         int pb = b.length() - 1;
-
         int flag = 0;
         StringBuilder sb = new StringBuilder();
         while (pa >= 0 || pb >= 0) {
