@@ -1,7 +1,5 @@
 /*
- * #Problem 40
- * 
- * Combination Sum II
+ * #Problem 40    Combination Sum II
  */
 
  class Solution {
