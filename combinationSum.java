@@ -1,5 +1,4 @@
-/* 
-#Problem 39
+/* #Problem 39
 Combination Sum
 */
 
