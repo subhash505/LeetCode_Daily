@@ -8,7 +8,6 @@ class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
     if(head == null)
         return null;
- 
     //get length of list
     ListNode p = head;
     int len = 0;
