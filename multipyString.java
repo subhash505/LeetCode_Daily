@@ -2,16 +2,13 @@ class Solution {
     public String multiply(String num1, String num2) {
         String n1 = new StringBuilder(num1).reverse().toString();
         String n2 = new StringBuilder(num2).reverse().toString();
-
         int[] d = new int[num1.length() + num2.length()];
-
         // multiply each digit and sum at the corresponding positions
         for (int i = 0; i < n1.length(); i++) {
             for (int j = 0; j < n2.length(); j++) {
                 d[i + j] += (n1.charAt(i) - '0') * (n2.charAt(j) - '0');
             }
         }
-
         StringBuilder sb = new StringBuilder();
 
         // calculate each digit
