@@ -27,11 +27,9 @@ public List<List<Integer>> fourSum(int[] nums, int target) {
  
                     k++;
                     l--;
- 
                     while(k<l &&nums[l]==nums[l+1] ){
                         l--;
                     }
- 
                     while(k<l &&nums[k]==nums[k-1]){
                         k++;
                     }
