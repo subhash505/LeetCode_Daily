@@ -9,8 +9,6 @@ x-axis forms a container, such that the container contains the most water.
 
 Notice that you may not slant the container.
 */
-
-
 class Solution {
     public int maxArea(int[] height) {
         if (height == null || height.length < 2) {
