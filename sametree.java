@@ -1,7 +1,6 @@
 /*   #Problem 100
 Same Tree 
 */
-
 /**
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; }
