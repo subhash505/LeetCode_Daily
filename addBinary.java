@@ -7,7 +7,6 @@ class Solution {
             return b;
         if (b == null || b.length() == 0)
             return a;
-
         int pa = a.length() - 1;
         int pb = b.length() - 1;
         int flag = 0;
