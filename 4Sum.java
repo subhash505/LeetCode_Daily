@@ -30,7 +30,7 @@ public List<List<Integer>> fourSum(int[] nums, int target) {
                       l--;
                     }
                     while(k<l &&nums[k]==nums[k-1]){
-                        k++;
+                      k++;
                     }
                 }
 
