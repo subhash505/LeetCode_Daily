@@ -1,7 +1,6 @@
 /* #Problem 39
 Combination Sum
 */
-
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
