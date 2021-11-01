@@ -15,7 +15,6 @@ class Solution {
         len++;
         p = p.next;
     }
- 
     //if remove first node
     int fromStart = len-n+1;
     if(fromStart==1)
