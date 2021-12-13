@@ -13,6 +13,8 @@ class Solution {
     int len = 0;
     while(p != null){
         len++;
+        
+        
         p = p.next;
     }
     //if remove first node
