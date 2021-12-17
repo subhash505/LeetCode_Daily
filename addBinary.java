@@ -23,7 +23,6 @@ class Solution {
                 vb = b.charAt(pb) == '0' ? 0 : 1;
                 pb--;
             }
-
             int sum = va + vb + flag;
             if (sum >= 2) {
                 sb.append(String.valueOf(sum - 2));
