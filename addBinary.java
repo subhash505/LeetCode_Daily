@@ -1,7 +1,6 @@
 /*
 #Problem 67 ADD Binary   */
 class Solution {
-
     public String addBinary(String a, String b) {
         if (a == null || a.length() == 0)
             return b;
