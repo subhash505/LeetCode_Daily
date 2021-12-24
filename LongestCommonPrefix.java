@@ -2,11 +2,9 @@ public String longestCommonPrefix(String[] strs) {
     if(strs==null || strs.length ==0){
         return "";
     }
- 
     if(strs.length == 1){
         return strs[0];
     }
- 
     int i=0;
     while(true){
         boolean flag = true;
