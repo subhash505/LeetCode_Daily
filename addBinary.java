@@ -31,7 +31,6 @@ class Solution {
                 sb.append(String.valueOf(sum));
             }
         }
-
         if (flag == 1) {
             sb.append("1");
         }
