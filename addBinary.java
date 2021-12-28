@@ -30,7 +30,7 @@ class Solution {
                 flag = 0;
                 sb.append(String.valueOf(sum));
             }
-        }
+      }
         if (flag == 1) {
             sb.append("1");
         }
