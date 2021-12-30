@@ -13,7 +13,6 @@ class Solution {
         while (pa >= 0 || pb >= 0) {
             int va = 0;
             int vb = 0;
-
             if (pa >= 0) {
                 va = a.charAt(pa) == '0' ? 0 : 1;
                 pa--;
