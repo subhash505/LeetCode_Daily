@@ -12,9 +12,7 @@ class Solution {
     ListNode p = head;
     int len = 0;
     while(p != null){
-        len++;
-        
-        
+        len++
         p = p.next;
     }
     //if remove first node
