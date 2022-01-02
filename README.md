@@ -14,7 +14,6 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 
 
-
 /*
 #Problem6
 
@@ -806,13 +805,11 @@ The right subtree of a node contains only nodes with keys greater than the node'
 Both the left and right subtrees must also be binary search trees.
 
 
-#Problem 99
+#Problem99
 Recover Binary Search Tree
 You are given the root of a binary search tree (BST), where exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
 
 Follow up: A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
-
-
 #Problem 100
 
 Same Tree
