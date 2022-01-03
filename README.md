@@ -30,7 +30,6 @@ rows:
 
 string convert(string s, int numRows);
 
-
 Problem 09
 
 Palindrome Number
@@ -38,8 +37,6 @@ Palindrome Number
 Given an integer x, return true if x is palindrome integer.
 
 An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.
-
-
 
 
 #Problem 10  (Hard)
@@ -759,9 +756,9 @@ You must solve this problem without using the library's sort function.
 The number of elements initialized in nums1 and nums2 are m and n respectively. You may assume that nums1 has a size equal to m + n such that it has enough space to hold additional elements from nums2.
 
 
-#Problem 93 
+#Problem93 
 
-Restore IP Addresses
+Restore IP Addresse
 
 Given a string s containing only digits, return all possible valid IP addresses that can be obtained from s. You can return them in any order.
 
@@ -806,7 +803,8 @@ Both the left and right subtrees must also be binary search trees.
 
 
 #Problem99
-Recover Binary Search Tree
+
+Recover Binary Search Tree and
 You are given the root of a binary search tree (BST), where exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
 
 Follow up: A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
