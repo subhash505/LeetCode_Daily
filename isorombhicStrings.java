@@ -4,7 +4,6 @@ class Solution {
     if(s.length()!=t.length()){
         return false;
     }
- 
     HashMap<Character, Character> map1 = new HashMap<>();
     HashMap<Character, Character> map2 = new HashMap<>();
  
