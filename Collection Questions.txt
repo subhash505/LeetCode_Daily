@@ -1,0 +1,55 @@
+
+
+-What type of Collection you have used till now ? Ans- Widely we are using ArrayList and Hashmap in Current
+    project
+  
+-Why we are using HashMap we have already Hashtable which can also store key and values?
+   
+-What is concurrent hashmap?
+
+-What is MAP and how it works internally ? Hash Map ? How hashmap Works internally ? 
+
+-Can you tell me internal implementaion of Hashmap?
+
+-Concurrent HashMap internal structure?
+ 
+Diff b/w HashMap and Internal HashMap Works?
+ 
+-What if dont overide hashcode method in hashmap?
+
+-When to use flatMap and When to use Map in java ?
+
+-When to use ArryList and When to use Linked List ?
+
+Can we make ArrayList immutble and How ?
+
+What are the collection you have used? Set,list, map 
+
+-Where we used set, map and List ?
+
+-Why cant we used Set in fetching element in db insted of List?
+
+-Is concurrent hashMap works on clone?
+
+-When to use arrayList?
+
+-What is difference b/w array and ArrayList ?
+
+-What is difference between hashtable and hashMap?
+
+-Difference between array list and linked list? 
+
+How the collision is handle in hashMap? Inclusion of element?
+  
+Dublicate key is allowed in Map?
+
+Types of collection in  java
+
+
+What all thread safe collection you have used?
+
+Copy on array list can you explain whrew it is used ? why it is used?
+
+Have you used tree maps? Why are they used ?
+
+Why do you think we override hash code and equals method?
