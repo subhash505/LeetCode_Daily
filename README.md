@@ -3,7 +3,6 @@
 This Repositoary is created inorder to collect solved Leetcode problems everyday. The types of problems include
 Easy, Medium and Hard stages.This collection will help to solve the leetcode problems with an ease.
 
-
 #Problem 1
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add 
