@@ -6,7 +6,6 @@ public class Solution {
                 return (a[1] - b[1]);
             }
         });
-
         int curend = points[0][1];
         int count = 1;
         for(int[] p : points) {
