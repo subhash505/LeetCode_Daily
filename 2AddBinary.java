@@ -20,7 +20,7 @@ class Solution {
             result.insert(0, sum % 2);
             // Modify carry
             carry = sum / 2;
-        }
+      }
         // Final check if carry exists
         if (carry > 0) {
             result.insert(0, 1);
