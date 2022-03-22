@@ -1,27 +1,12 @@
 class Solution {
-    // O(N)time
-// O(N)space
-public String getSmallestString(int n, int k) {
-    int count = k / 26;
-    int mod = k % 26;
-
-    StringBuilder res = new StringBuilder();
-    int head = n - count;
-    while(head > 1 || mod == 0){
-        if(mod == 0){
-            count--;
-            mod = 26;
-            head++;
+    public String getSmallestString(int n, int k) {
+        char [] res = new char[n];
+        Arrays.fill(res, 'a');
+        k -= n;
+        while (k > 0) {
+            res[--n] += Math.min(25, k);
+            k -= Math.min(25, k);
         }
-        res.append('a');
-        mod--;
-        head--;
+        return String.valueOf(res);
     }
-    res.append((char)('a' + mod - 1));
-    while(count > 0){
-        res.append('z');
-        count--;
-    }
-    return res.toString();
-}
 }
