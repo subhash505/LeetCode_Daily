@@ -1,5 +1,4 @@
-Class Solution {
-
+class Solution{
     public void nextPermutation(int[] nums) {
     //find first decreasing digit
     int mark = -1;
@@ -41,6 +40,4 @@ private void reverse(int[] nums, int i, int j) {
         j--;
     }
 }
-
-
 }
