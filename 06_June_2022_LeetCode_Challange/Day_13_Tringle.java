@@ -7,4 +7,8 @@ class Solution {
             }
         return T.get(0).get(0);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7dc09141bdd455d9f0504d06eb3dd684ece17789
