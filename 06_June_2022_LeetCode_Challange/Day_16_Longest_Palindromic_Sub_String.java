@@ -25,4 +25,8 @@ class Solution {
  
     return longest;
 }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 496ce378d2931b533028e56ac2bfb8501cf8e09a
