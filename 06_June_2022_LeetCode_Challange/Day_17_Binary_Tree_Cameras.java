@@ -26,4 +26,8 @@ class Solution {
         ans++;
         return 1;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0bb077d58c786b09fc017c2e4b08f0a70255c01c
