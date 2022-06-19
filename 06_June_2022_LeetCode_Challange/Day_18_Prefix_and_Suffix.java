@@ -1,49 +1,69 @@
+
 class TrieNode {
-    public TrieNode[] children = new TrieNode[26];
-    public List<Integer> vals = new ArrayList<>();
+    public Map<Character, TrieNode> children;
+    public Set<String> words;
+    public TrieNode() {
+        children = new HashMap<>();
+        words = new HashSet<>();
+    }
 }
-
 class WordFilter {
-    private TrieNode pTrie = new TrieNode();
-    private TrieNode sTrie = new TrieNode();
-
+    private TrieNode rootP, rootS; 
+    private Map<String, Integer> indexes; 
+    
     public WordFilter(String[] words) {
-        for (int index = 0; index < words.length; index++) {
-            char[] word = words[index].toCharArray();
-            int wlen = word.length;
-            insert(word, index, pTrie, 0, wlen, 1);
-            insert(word, index, sTrie, wlen-1, -1, -1);
+        rootP = new TrieNode();
+        rootS = new TrieNode();
+        indexes = new HashMap<>();
+        for (int i=0; i<words.length; i++) {
+            insert(words[i]);
+            indexes.put(words[i], i);
         }
     }
-
-    private void insert(char[] word, int index, TrieNode trie, int start, int end, int step) {
-        for (int i = start; i != end; i += step) {
-            int c = word[i] - 'a';
-            if (trie.children[c] == null)
-                trie.children[c] = new TrieNode();
-            trie = trie.children[c];
-            trie.vals.add(index);
+    
+    private void insert(String word) {
+        TrieNode ptrP = rootP, ptrS = rootS;
+        for (int i=0; i<word.length(); i++) {
+            // insert as prefixes
+            char c = word.charAt(i);
+            if (!ptrP.children.containsKey(c))
+                ptrP.children.put(c, new TrieNode());
+            ptrP = ptrP.children.get(c);
+            ptrP.words.add(word);
+            
+            // insert as suffixes
+            c = word.charAt(word.length()-1-i);
+            if (!ptrS.children.containsKey(c))
+                ptrS.children.put(c, new TrieNode());
+            ptrS = ptrS.children.get(c);
+            ptrS.words.add(word);
         }
     }
-
-    private List<Integer> retrieve(char[] word, TrieNode trie, int start, int end, int step) {
-        for (int i = start; i != end; i += step) {
-            trie = trie.children[word[i]-'a'];
-            if (trie == null) return new ArrayList<>();
+    
+    public int f(String prefix, String suffix) {
+        TrieNode ptrP = rootP, ptrS = rootS;
+        
+        // get all words with prefix
+        for (int i=0; i<prefix.length(); i++) {
+            char c = prefix.charAt(i);
+            if (!ptrP.children.containsKey(c)) return -1;
+            ptrP = ptrP.children.get(c);            
         }
-        return trie.vals;
-    }
-
-    public int f(String pre, String suf) {
-        List<Integer> pVals = retrieve(pre.toCharArray(), pTrie, 0, pre.length(), 1);
-        List<Integer> sVals = retrieve(suf.toCharArray(), sTrie, suf.length()-1, -1, -1);
-        int svix = sVals.size() - 1, pvix = pVals.size() - 1;
-        while (svix >= 0 && pvix >= 0) {
-            int sVal = sVals.get(svix), pVal = pVals.get(pvix);
-            if (sVal == pVal) return sVal;
-            if (sVal > pVal) svix--;
-            else pvix--;
+        Set<String> prefixes = ptrP.words;
+        
+        // get all words with suffix
+        for (int i=0; i<suffix.length(); i++) {
+            char c = suffix.charAt(suffix.length()-1-i);
+            if (!ptrS.children.containsKey(c)) return -1;
+            ptrS = ptrS.children.get(c);            
         }
-        return -1;
+        Set<String> suffixes = ptrS.words;
+        
+        int index = -1;
+        for (String word: prefixes) 
+            if (suffixes.contains(word))
+                 index = Math.max(index, indexes.get(word));
+        
+        return index;
     }
 }
